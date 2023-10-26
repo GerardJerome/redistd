@@ -11,7 +11,7 @@ public class RedisUtil {
     public static History history= new History();
     private final static String TAG = "JGER";
     public static void connect(){
-        jedis = new Jedis("redis://groupeTP:Legroupe01!@redis-18974.c304.europe-west1-2.gce.cloud.redislabs.com:18974");
+        jedis = new Jedis("URL BDD");
         history.setMap(jedis.hgetAll(TAG));
     }
     public static void store(String word) {

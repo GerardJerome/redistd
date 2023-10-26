@@ -12,10 +12,6 @@ public class Main {
 
     private StateEnum state;
     public static void main(String[] args) throws IOException {
-        /*Jedis jedis = new Jedis("redis://groupeTP:Legroupe01!@redis-18974.c304.europe-west1-2.gce.cloud.redislabs.com:18974");
-        Connection connection = jedis.getConnection();
-        jedis.set("test","test");
-        System.out.println(jedis.get("test"));*/
         RedisUtil.connect();
         ConsoleUtil.state = StateEnum.MENU;
         Terminal terminal = TerminalBuilder.terminal();
